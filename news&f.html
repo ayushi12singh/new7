@@ -1,0 +1,640 @@
+
+<html>
+	<head>
+		<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Creepster&family=Lobster+Two&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			@media only screen and (max-width:1300px){
+				html,body{
+						width:100%;
+						height:100%;
+						margin:0;
+						padding:0;
+						overflow-x:hidden;
+					}
+				}
+			body{
+				height:100%;
+				background:white;
+				padding:0px;
+				margin:0 auto;
+				font-family: 'Creepster', cursive;
+				font-family: 'Lobster Two', cursive;
+				width:100%;
+			}
+			p{
+				color:black;
+				}	
+			h3{
+				color:black;
+				}
+			.new{
+				color:black;
+				text-align:center;
+				font-style:oblique;
+				text-shadow: 0 0 3px #FF0000, 0 0 5px green;
+				height:1400px;
+				}
+			.wave{
+			color:black;
+text-shadow: -5px 5px 0px #00e6e6, -10px 10px 0px #01cccc, -15px 15px 0px #00bdbd;
+				font-size:150%;
+					}
+		.checked {
+  				color: orange;
+				}
+			#menuarea{
+				background:pink;
+				width:1300px;
+				height:50px;
+				border:none;
+				position:sticky;
+				z-index:1000;
+				top:0;
+				}
+			#menuarea ul{
+					/*list-style-type:none;
+					list-style-image:url('arr.png');
+					list-style-position:inside;*/
+					list-style:none url('arr.png') inside;
+					margin:0;
+					padding:0;
+					list-style:none;
+					}
+			#menuarea ul li{
+					float:left;
+						}
+			#menuarea ul li a:link, #menuarea ul li a:visited{
+					color:black;
+					background:pink;
+					padding:10px 25px;
+					text-decoration:none;
+					display:block;
+					}
+			#menuarea ul li a:hover{
+					color:black;
+					background:pink;
+					}
+			#menuarea ul li:last-child a:link, #menuarea ul li:last-child a:visited{
+					border-bottom:none;
+					}
+			#menuarea ul li ul{
+					display:none;
+					}
+			#menuarea ul li:hover ul{
+					display:block;
+					position:absolute;
+					z-index:1000;
+					}
+			#menuarea ul li:hover ul li{
+					float:none;
+					}
+			#menuarea ul li:hover ul li a:link,#menuarea ul li:hover ul li a:visited{
+					border:none;
+					border-bottom:solid 1px blue;
+					}
+			#jotarea{
+					text-shadow: 0 0 5px #FF00ff;
+
+					}
+			#boxarea{
+					width:1300px;
+					height:500px;
+					background:white;	
+					float:left;
+					}		
+			.box1area{
+					width:1300px;
+					height:430px;
+					background:white;	
+					float:left;
+					}
+			.box img{
+					width:250px;
+					height:350px;
+					}	
+			.box{
+					width:250px;
+					height:400px;
+					float:left;
+					}	
+			.boxar{
+					width:950px;
+					height:400px;
+					float:left;
+					margin:25px;
+					}
+			.footer2{
+				background:#161616;
+				color:#d3d3d3;
+				height:450px;
+				position:relative;
+				width:100%;
+				top:7000px;
+				position:relative;
+				}
+			.footer2 .footer-content {
+				height:350px;
+				display:flex;
+				position:absolute;
+				}
+			.footer2 .footer-content .footer-section{
+				flex:1;
+				padding:25px;
+				}
+			.footer2 .footer-content h1,
+			.footer2 .footer-contenth2 {
+				color:white;
+				}
+			
+			.footer2 .footer-content .about h1 span{
+				color:#05f7ff;
+				}			
+			.footer2 .footer-content .about .contact  span{
+				display:block;s
+				font-size:1.1em;
+				margin-bottom:8px;
+				}			
+			.footer2 .footer-content .about .socials a{
+				border:1px solid grey;
+				width:45px;
+				height:41px;
+				padding-top:5px;
+				margin-right:5px;
+				text-align:center;
+				display:inline-block;
+				font-size:3.1em;
+				border-radius:5px;
+				transition:all .3s;
+				}			
+			.footer2 .footer-content .about .socials a:hover{
+				border:1px solid white;
+				color:white;
+				transition:all .3s;
+				}
+			.footer2 .footer-content .links ul a{
+				display:block;
+				margin-bottom:10px;
+				font-size:1.2em;
+				transition:all .3s;
+				}
+			.footer2 .footer-content .links ul a:hover{
+				color:white;
+				margin-left:15px;
+				transition:all .3s;
+				}
+			.footer2 .footer-content .contact-form .contact-input{
+				background:#272727;
+				color:#bebdbd;
+				margin-bottom:10px;
+				line-height:1.5rem;
+				padding:0.9rem 1.4rem;
+				border:none;
+				}
+			.footer2 .footer-content .contact-form .contact-input:focus{
+				background:#lalala;
+				}
+			.btn{
+				padding:.5rem 1rem;
+				background:#006669;
+				color:white;
+				border:1px white transparent;
+				border-radius:.25rem;
+				}
+			.btn big{
+				padding:.7rem 1.3rem;
+				line-height:1.3rem; 
+				}
+			.btn:hover{
+				color:white;
+				background:#005255;
+				}
+			.footer2 .footer-content .contact-form .contact-btn{
+				float:right;
+				}
+			.footer2 .footer-bottom {
+				background:#343a40;
+				color:#686868;
+				height:50px;
+				width:100%;
+				text-align:center;
+				position:absolute;
+				bottom:0px;
+				left:0px;
+				padding-top:20px;
+				}
+			.fa {
+ 				padding: 20px;
+				font-size: 30px;
+  				width: 50px;
+  				text-align: center;
+ 				text-decoration: none;
+  				margin: 5px 2px;
+				}
+
+			.fa:hover {
+    				opacity: 0.7;
+				}
+
+			.fa-facebook {
+  				background: #3B5998;
+  				color: white;
+				}
+			.fa-youtube {
+  				background: #bb0000;
+  				color: white;
+				}
+
+			.fa-instagram {
+ 				 background:red;
+ 				 color: white;
+				}
+			.button {
+  				background-color: #4CAF50;
+  				border:clack;
+  				color: white;
+  				padding: 20px;
+  				text-align: center;
+  				text-decoration: none;
+  				display: inline-block;
+  				font-size: 16px;
+  				margin: 4px 2px;
+  				cursor: pointer;
+				}
+			.button1 {
+				border-radius: 12px;
+				}
+		</style>
+	</head>
+
+	<body>
+		<div class="wave">
+			<h1 align="center"> BooksEssentially</h1>
+		</div>
+		<div id="menuarea">
+			<table cellspacing="0" border="1px" width="100%" height="100%" valign="top">
+					<tr>
+						<td>
+							<ul>
+							<li><a href="categoriess.html">CATEGORIES</a>
+							<ul>
+								<li><a href="#">fiction </a></li>
+								<li><a href="#">suspense & thriller</a></li>
+								<li><a href="#">mystery & detect</a></li>
+								<li><a href="#">romance</a></li>
+								<li><a href="#">biography & memoir</a></li>
+								<li><a href="#">children's collection</a></li>
+							</ul>
+							</li>
+							</ul>	
+						</td>
+						<td>
+							<ul>	
+							<li><a href="magazine/news&f.html">BOOK REVIEW</a>
+							<ul>
+								<li><a href="#">profile </a></li>
+								<li><a href="#">perspectives</a></li>
+								<li><a href="#">awards</a></li>
+								<li><a href="#">in the news</a></li>
+							</ul>
+							</li>
+							</ul>	
+						</td>
+						<td>
+							<ul>	
+							<li><a href="authors.html">AUTHORS</a>
+							<ul>
+								<li><a href="#">Stephen King </a></li>
+								<li><a href="#">Ernest Hemingway</a></li>
+								<li><a href="#">Charles Dickens</a></li>
+								<li><a href="#">J.K. Rowling </a></li>
+								<li><a href="#">William Shakespeare</a></li>
+								<li><a href="#">Agatha Christie</a></li>
+							</ul>
+							</li>
+							</ul>	
+						</td>
+						<td>
+							<ul>	
+							<li><a href="magazine/more.html">MORE</a>
+							<ul>
+								<li><a href="#">browse talent</a></li>
+								<li><a href="#">discover content</a></li>
+								<li><a href="#">browse collection</a></li>
+							</ul>
+							</li>
+							</ul>	
+						</td>
+						
+						<td>
+							<ul>	
+							<li><a href="magazine/magazine.html">MAGAZINES</a>
+							<ul>
+								<li><a href="#">current issue </a></li>
+								<li><a href="#">special issue</a></li>
+								<li><a href="#">all issue</a></li>
+							</ul>
+							</li>
+							</ul>	
+						</td>
+					</tr>
+					</table>
+		</div>
+		
+		<div class="wave">
+			<h1 align="center">BOOK REVIEW</h1>
+		</div>	
+		<div id="boxarea">	
+			<div class="box1area">
+				<div class="box">
+					<img src="nf1.jpg"/>
+				</div>
+				<div class="boxar">
+					<h2>Uncultured: A Memoir</h2>
+					<p>by Daniella Mestyanek Young (Goodreads Author)</p>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+					<p><b>"A painful and propulsive memoir delivered in the honest tones of a woman who didn’t always think she’d live to tell her story." —The New York Times</b></p>
+
+<p><b>A Buzzfeed Best Book of September</b></p>
+
+<p><b>In the vein of Educated and The Glass Castle, Daniella Mestyanek Young's Uncultured is more than a memoir about an exceptional upbringing, but about a woman who, no matter the lack of tools given to her, is determined to overcome.</b></p>
+					<button class="button button1">BUY NOW</button>
+				</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf2.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>Solito</h2>
+				<p>by Javier Zamora (Goodreads Author)</p>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				<p><b>A young poet tells the unforgettable story of his harrowing migration from El Salvador to the United States at the age of nine in this moving, page-turning memoir hailed as the mythic journey of our era (Sandra Cisneros)
+</b></p>
+				<button class="button button1">BUY NOW</button>	
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf3.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>American Demon: Eliot Ness and the Hunt for America's Jack the Ripper</h2>
+				<p>by Daniel Stashower</p>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				<p><b>New York Times bestselling author and Edgar Award-winner Daniel Stashower returns with American Demon, a historical true crime starring legendary lawman Eliot Ness.</b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf4.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>Prisoners of the Castle: An Epic Story of Survival and Escape from Colditz, the Nazis' Fortress Prison</h2>
+				<p>by Ben Macintyre</p>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				<p><b>The definitive and surprising true story of one of history’s most notorious prisons—and the remarkable cast of POWs who tried relentlessly to escape their captors, from the New York Times bestselling author of The Spy and the Traitor</b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf5.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>The definitive and surprising true story of one of history’s most notorious prisons—and the remarkable cast of POWs who tried relentlessly to escape their captors, from the New York Times bestselling author of The Spy and the Traitor</h2>
+				<p></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf6.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>The Buntline Special</h2>
+				<p>by Mike Resnick</p>
+				<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				<p><b>Welcome to a West like you've never seen before, where electric lights shine down on the streets of Tombstone, while horseless stagecoaches carry passengers to and fro, and where death is no obstacle to The Thing That Was Once Johnny Ringo. Think you know the story of the O.K. Corral? Think again, as five-time Hugo winner Mike Resnick takes on his first steampunk western tale, and the West will never be the same.</b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf7.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>The Chaos Machine: The Inside Story of How Social Media Rewired Our Minds and Our World</h2>
+				<p>by Max Fisher</p>
+				<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				<p><b>From a New York Times investigative reporter and Pulitzer Prize finalist, “an essential book for our times” (Ezra Klein), tracking the high-stakes inside story of how Big Tech’s breakneck race to drive engagement—and profits—at all costs fractured the world</b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf8.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>Servants of the Damned: Giant Law Firms, Donald Trump, and the Corruption of Justice</h2>
+				<p>by David Enrich (Goodreads Author)</p>
+				<p><b>From the New York Times’s Business Investigations Editor and #1 bestselling author of Dark Towers comes a long-overdue exposé of the astonishing yet shadowy power wielded by the world’s largest law firms, following the narrative arc of Jones Day, the firm that represented the Trump campaign and much of the Fortune 500, as a powerful encapsulation of the changes that have swept the legal industry in recent decades.</b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf9.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>Hack Your Bureaucracy: Get Things Done No Matter What Your Role on Any Team</h2>
+				<p>by Marina Nitze (Goodreads Author), Nick Sinai</p>
+				<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+				<p><b>“A deeply empowering and practical book: for anyone, anywhere, who just wants to GET STUFF DONE.”
+--Cecilia Muñoz, former Director, White House Domestic Policy Council under President Obama</b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf10.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>My Favorite Thing Is Monsters, Vol. 2</h2>
+				<p>by Emil Ferris (Goodreads Author)</p>
+				<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				<p><b>In the conclusion of this two-part graphic novel, set in 1960s Chicago, dark mysteries past and present abound, and 10-year-old Karen tries to solve them.
+Karen attends the Yippie-organized Festival of Life in Chicago, and finds herself swept up in a police stomping. Privately, she wrestles with her sexual identity, and she continues to investigate her neighbor’s recent death. She discovers one last cassette tape, which sheds light on Anka’s heroic activities.</b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf11.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>Enemies</h2>
+				<p>by Svetlana Chmakova (Goodreads Author)</p>
+				<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				<p><b>Felicity’s sure she’s going to do something big. Exactly what is still a mystery, but she’ll figure it out. Her sister, Letty, teases Felicity that she never finishes stuff, but that’s just because Letty is so perfect. Still, life is good with plenty of friends—drawing with the art club and playing games with her buddies keep her busy. But when she decides to join a contest to show Letty that she CAN get things done, Felicity begins to wonder if friends becoming enemies is easier than she thought. Are they really enemies, though…? What does it even mean to be enemies? And…who is it that she needs the most on her side…?</b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf12.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>Constantine: Distorted Illusions</h2>
+				<p>by Kami Garcia (Goodreads Author), Isaac Goodhart (Artist)</p>
+				<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star"></span>
+				<p><b>Constantine is not your average bad boy…
+
+John Constantine is, and has always been, a magician of the highest caliber—who doesn’t need additional training from any highbrow magician, thank you very much.
+
+Sensing an opportunity for independence, Constantine falsely accepts an apprenticeship in the United States to instead become the lead singer of his best friend’s punk band, Mucous Membrane. When the band begins to dabble in magic, a complicated spell gets out of hand…and the disastrous consequences might be more than Constantine can handle.
+
+Join #1 New York Times bestselling author Kami Garcia (Beautiful Creatures) and artist Isaac Goodhart in the most thrilling magical team-up of the year! </b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf13.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>Rain Rising</h2>
+				<p>by Courtne Comrie</p>
+				<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+					<span class="fa fa-star checked"></span>
+				<p><b>This dazzling debut middle grade novel in verse is a riveting journey toward self-acceptance for fans of Genesis Begins Again. Thirteen-year-old Rain must overcome sadness after her all-star brother is badly beaten up at a white frat party. Eventually, Rain finds hope again and helps her family heal.
+</b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf14.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>Your Emergency Contact Has Experienced an Emergency</h2>
+				<p>by Chen Chen</p>
+				<p><b>What happens when everything falls away, when those you call on in times of need are themselves calling out for rescue? In his highly anticipated second collection, Chen Chen continues his investigation of family, both blood and chosen, examining what one inherits and what one invents, as a queer Asian American living through an era of Trump, mass shootings and the COVID-19 pandemic. Working, always working in the wrecked heart of this new collection is a switchboard operator, picking up and connecting calls. Raucous 2 a.m. prank calls. Whispered-in-a-classroom emergency calls. And sometimes, its pages record the dropping of a call, a failure or refusal to pick up. With irrepressible humor and play, these anarchic poems celebrate life, despite all that would crush aliveness. Hybrid in form and set in New England, West Texas and a landlocked province of China, among other places, Your Emergency Contact Has Experienced an Emergency refuses neat categorizations and pat answers. Instead, the book offers an insatiable curiosity about how it is we keep finding ways to hold onto one another.</b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf15.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2>No Country for Eight-Spot Butterflies: A Lyric Essay</h2>
+				<p>by Julian Aguon</p>
+				<p><b>A collection of essays on resistance, resilience, and collective power in the age of climate disaster from Chamorro human rights lawyer and organizer Julian Aguon.
+</b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>	
+			<div class="box1area">	
+				<div class="box">
+					<img src="nf.jpg"/>
+				</div>
+				<div class="boxar">
+				<h2></h2>
+				<p></p>
+				<p><b></b></p>
+				<button class="button button1">BUY NOW</button>
+				</div>
+			</div>
+		</div>	
+		<div class="footer2">
+			<div class="footer-content">
+				<div class="footer-section about">
+					<h1 class="logo-text"><span>Books</span>Essentially</h1>
+					<p><font color="white">BooksEssentially Collections helps librarians build and continually update collections curated with both literary merit and inclusive content in mind.</font></p>
+				<div class="socials">
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-youtube"></a>
+					<a href="#" class="fa fa-instagram"></a>
+				</div>
+				<div class="contact">
+					<i class="fa fa-phone"></i> &nbsp; 123-456-789</span>
+					<i class="fa fa-envelope"></i> &nbsp; info@booksessentially.com</span>
+				</div>
+			</div>
+				<div class="footer-section links">
+					<h2>QUICK LINKS</h2>
+					<br>
+					<ul>
+						<a href="magazine/news&f.html"><li><font color="white">BOOK REVIEW</font></li></a>
+						<a href="magazine/magazine.html"><li><font color="white">MAGAZINE</font></li></a>
+						<a href="magazine/about.html"><li><font color="white">ABOUT US</font></li></a>
+						<a href="policy.html"><li><font color="white">PRIVACY POLICY</font></li></a>
+						<a href="categoriess.html"><li><font color="white">CATEGORIES</font></li></a>
+					</ul>
+				</div>
+				<div class="footer-section contact-form">
+					<h2>CONTACT US</h2>
+					<br>
+					<form action="index.html" method="post">
+						<input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
+						<textarea name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
+						<button type="submit" class="btn btn-big contact-btn">
+							<i class="fa fa-envelope"></i>
+							Send
+						</button>
+					</form>
+				</div>
+			</div>
+			
+				<div class="footer-bottom">
+					&copy; booksessentially.com | Designed by Ayushi Singh
+				</div>
+	</body>
+</html>
